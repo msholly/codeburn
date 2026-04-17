@@ -1,10 +1,22 @@
 ; =================== METERS: MODELS ===================
 
+[MeterModelsBorder]
+Meter=Shape
+Shape=Rectangle 0,0,338,98,5 | Fill Color 224,91,245,255 | StrokeWidth 0
+X=1
+Y=143
+
+[MeterModelsBG]
+Meter=Shape
+Shape=Rectangle 0,0,334,94,3 | Fill Color 15,15,20,235 | StrokeWidth 0
+X=3
+Y=145
+
 [MeterModelsHeader]
 Meter=String
 Text=MODELS  (7 days)
 X=#PAD#
-Y=107
+Y=156
 FontFace=#FF#
 FontSize=9
 FontColor=#Orange#
@@ -16,7 +28,7 @@ AntiAlias=1
 [MeterModel1Seg0]
 Meter=Image
 X=12
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=91,158,245,255
@@ -26,7 +38,7 @@ DynamicVariables=1
 [MeterModel1Seg1]
 Meter=Image
 X=21
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=138,171,198,255
@@ -36,7 +48,7 @@ DynamicVariables=1
 [MeterModel1Seg2]
 Meter=Image
 X=30
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=184,183,152,255
@@ -46,7 +58,7 @@ DynamicVariables=1
 [MeterModel1Seg3]
 Meter=Image
 X=39
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=231,196,105,255
@@ -56,7 +68,7 @@ DynamicVariables=1
 [MeterModel1Seg4]
 Meter=Image
 X=48
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=247,187,86,255
@@ -66,7 +78,7 @@ DynamicVariables=1
 [MeterModel1Seg5]
 Meter=Image
 X=57
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=250,169,78,255
@@ -76,7 +88,7 @@ DynamicVariables=1
 [MeterModel1Seg6]
 Meter=Image
 X=66
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=253,151,71,255
@@ -86,7 +98,7 @@ DynamicVariables=1
 [MeterModel1Seg7]
 Meter=Image
 X=75
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=254,134,69,255
@@ -96,7 +108,7 @@ DynamicVariables=1
 [MeterModel1Seg8]
 Meter=Image
 X=84
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=251,120,76,255
@@ -106,7 +118,7 @@ DynamicVariables=1
 [MeterModel1Seg9]
 Meter=Image
 X=93
-Y=125
+Y=174
 W=9
 H=14
 SolidColor=248,105,84,255
@@ -118,7 +130,7 @@ Meter=String
 MeasureName=MeasureModel1Name
 Text=%1
 X=108
-Y=123
+Y=172
 W=148
 H=18
 FontFace=#FF#
@@ -132,7 +144,7 @@ Meter=String
 MeasureName=MeasureModel1Cost
 Text=$%1
 X=328
-Y=121
+Y=170
 W=70
 H=18
 FontFace=#FF#
@@ -146,7 +158,7 @@ AntiAlias=1
 [MeterModel2Seg0]
 Meter=Image
 X=12
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=91,158,245,255
@@ -156,7 +168,7 @@ DynamicVariables=1
 [MeterModel2Seg1]
 Meter=Image
 X=21
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=138,171,198,255
@@ -166,7 +178,7 @@ DynamicVariables=1
 [MeterModel2Seg2]
 Meter=Image
 X=30
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=184,183,152,255
@@ -176,7 +188,7 @@ DynamicVariables=1
 [MeterModel2Seg3]
 Meter=Image
 X=39
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=231,196,105,255
@@ -186,7 +198,7 @@ DynamicVariables=1
 [MeterModel2Seg4]
 Meter=Image
 X=48
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=247,187,86,255
@@ -196,7 +208,7 @@ DynamicVariables=1
 [MeterModel2Seg5]
 Meter=Image
 X=57
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=250,169,78,255
@@ -206,7 +218,7 @@ DynamicVariables=1
 [MeterModel2Seg6]
 Meter=Image
 X=66
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=253,151,71,255
@@ -216,7 +228,7 @@ DynamicVariables=1
 [MeterModel2Seg7]
 Meter=Image
 X=75
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=254,134,69,255
@@ -226,7 +238,7 @@ DynamicVariables=1
 [MeterModel2Seg8]
 Meter=Image
 X=84
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=251,120,76,255
@@ -236,7 +248,7 @@ DynamicVariables=1
 [MeterModel2Seg9]
 Meter=Image
 X=93
-Y=145
+Y=194
 W=9
 H=14
 SolidColor=248,105,84,255
@@ -248,7 +260,7 @@ Meter=String
 MeasureName=MeasureModel2Name
 Text=%1
 X=108
-Y=143
+Y=192
 W=148
 H=18
 FontFace=#FF#
@@ -262,7 +274,7 @@ Meter=String
 MeasureName=MeasureModel2Cost
 Text=$%1
 X=328
-Y=141
+Y=190
 W=70
 H=18
 FontFace=#FF#
@@ -276,7 +288,7 @@ AntiAlias=1
 [MeterModel3Seg0]
 Meter=Image
 X=12
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=91,158,245,255
@@ -286,7 +298,7 @@ DynamicVariables=1
 [MeterModel3Seg1]
 Meter=Image
 X=21
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=138,171,198,255
@@ -296,7 +308,7 @@ DynamicVariables=1
 [MeterModel3Seg2]
 Meter=Image
 X=30
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=184,183,152,255
@@ -306,7 +318,7 @@ DynamicVariables=1
 [MeterModel3Seg3]
 Meter=Image
 X=39
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=231,196,105,255
@@ -316,7 +328,7 @@ DynamicVariables=1
 [MeterModel3Seg4]
 Meter=Image
 X=48
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=247,187,86,255
@@ -326,7 +338,7 @@ DynamicVariables=1
 [MeterModel3Seg5]
 Meter=Image
 X=57
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=250,169,78,255
@@ -336,7 +348,7 @@ DynamicVariables=1
 [MeterModel3Seg6]
 Meter=Image
 X=66
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=253,151,71,255
@@ -346,7 +358,7 @@ DynamicVariables=1
 [MeterModel3Seg7]
 Meter=Image
 X=75
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=254,134,69,255
@@ -356,7 +368,7 @@ DynamicVariables=1
 [MeterModel3Seg8]
 Meter=Image
 X=84
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=251,120,76,255
@@ -366,7 +378,7 @@ DynamicVariables=1
 [MeterModel3Seg9]
 Meter=Image
 X=93
-Y=165
+Y=214
 W=9
 H=14
 SolidColor=248,105,84,255
@@ -378,7 +390,7 @@ Meter=String
 MeasureName=MeasureModel3Name
 Text=%1
 X=108
-Y=163
+Y=212
 W=148
 H=18
 FontFace=#FF#
@@ -392,7 +404,7 @@ Meter=String
 MeasureName=MeasureModel3Cost
 Text=$%1
 X=328
-Y=161
+Y=210
 W=70
 H=18
 FontFace=#FF#
@@ -405,6 +417,6 @@ AntiAlias=1
 Meter=Image
 SolidColor=#Line#
 X=0
-Y=187
+Y=241
 W=#W#
 H=1
