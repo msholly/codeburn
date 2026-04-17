@@ -45,13 +45,15 @@ function buildDailyRows(projects: ProjectSummary[]): Array<Record<string, string
 }
 
 function buildActivityRows(projects: ProjectSummary[]): Array<Record<string, string | number>> {
-  const catTotals: Record<string, { turns: number; cost: number }> = {}
+  const catTotals: Record<string, { turns: number; cost: number; editTurns: number; oneShotTurns: number }> = {}
   for (const project of projects) {
     for (const session of project.sessions) {
       for (const [cat, d] of Object.entries(session.categoryBreakdown)) {
-        if (!catTotals[cat]) catTotals[cat] = { turns: 0, cost: 0 }
+        if (!catTotals[cat]) catTotals[cat] = { turns: 0, cost: 0, editTurns: 0, oneShotTurns: 0 }
         catTotals[cat].turns += d.turns
         catTotals[cat].cost += d.costUSD
+        catTotals[cat].editTurns += d.editTurns ?? 0
+        catTotals[cat].oneShotTurns += d.oneShotTurns ?? 0
       }
     }
   }
@@ -61,6 +63,8 @@ function buildActivityRows(projects: ProjectSummary[]): Array<Record<string, str
       Activity: CATEGORY_LABELS[cat as TaskCategory] ?? cat,
       [getCostColumnHeader()]: convertCost(d.cost),
       Turns: d.turns,
+      'Edit Turns': d.editTurns,
+      '1-Shot Turns': d.oneShotTurns,
     }))
 }
 
@@ -199,6 +203,7 @@ export async function exportJson(periods: PeriodExport[], outputPath: string): P
       daily: buildDailyRows(period.projects),
       activity: buildActivityRows(period.projects),
       models: buildModelRows(period.projects),
+      tools: buildToolRows(period.projects),
     }
   }
 
